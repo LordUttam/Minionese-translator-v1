@@ -8,14 +8,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-        :root{
-            margin: 0 0 0 0;
-        }
 
+      
         body {
             margin: 0 0;
             font-family: 'Kalam', cursive;
             color: #333333;
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
       
         header {
@@ -23,6 +23,12 @@
             padding: 0.5rem;
             text-align: center;
             background-color: #F2C94C;
+            height:10vh;
+            width: 100%;
+        }
+
+        .mid-section {
+            height: 54vh;
         }
 
         .text-areas{
@@ -71,7 +77,8 @@
 
                 
         footer {
-            bottom: 0;
+            margin: 0;
+            width: 100%;
             padding: 1rem;
             background-color: #F2C94C;
             text-align: center;
@@ -93,9 +100,11 @@
     <header>
     <h1>Minionese Translator</h1>
     </header>
+    <div class="mid-section">
     <div class="text-areas">
     <textarea id="english" placeholder="Write something in English here and press Enter. Press Shift+Enter for inserting a new line." cols="60" rows="18"></textarea>
     <textarea disabled id="minion-lang" placeholder="Reverse translation coming soon..." cols="60" rows="18"></textarea>  
+    </div>
     </div>
     <!-- <div style="clear:both"></div>  -->
     <!-- clears so that above floats don't overlap. -->
